@@ -18,7 +18,8 @@ async function cargarEstados() {
   select.innerHTML = '<option value="">Cargando...</option>';
 
   try {
-    const response = await fetch('https://ejemplo.com/api/estados.php');
+    const url = 'https://dekandela.com.mx/api-estados.php';
+    const response = await fetch(url);
     const data = await response.json();
 
     // Limpiar el select
