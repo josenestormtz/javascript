@@ -5,3 +5,6 @@ Aprender cómo detectar cuando un usuario hace clic en un botón y ejecutar una 
 
 ## [Consumir una API](https://github.com/josenestormtz/javascript/blob/77c9366e976aeddb9f527767cef3c5a16488a030/consumir-api.md)
 Una vez que la API permite CORS, podemos consumirla fácilmente desde el navegador usando JavaScript.
+
+## [Consumir una API enviando JSON con JavaScript](https://github.com/josenestormtz/javascript/blob/97adf49f8c589c3d9ee3e0676b083364200c059f/consumir-api-json.md)
+Aprender a enviar datos en formato JSON a una API mediante el método POST, usando fetch.
