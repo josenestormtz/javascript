@@ -7,10 +7,9 @@ Una vez que la API permite CORS, podemos consumirla fácilmente desde el navegad
 ## 1️⃣ Usando `fetch` con `async/await` (recomendado)
 
 ```javascript
-const url = 'https://dekandela.com.mx/api-estados.php';
-
 async function obtenerDatos() {
   try {
+    const url = 'https://dekandela.com.mx/api-estados.php';
     const response = await fetch(url);
 
     if (!response.ok) {
