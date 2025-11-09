@@ -3,6 +3,9 @@
 ## [Capturar el evento click de un botón en JavaScript](https://github.com/josenestormtz/javascript/blob/f29e40e68428d76e9e6f353f24451316fd9e98bd/evento-click.md)
 Aprender cómo detectar cuando un usuario hace clic en un botón y ejecutar una función en respuesta.
 
+## [Validaciones básicas](https://github.com/josenestormtz/javascript/blob/48244af6014baa879c4c7ad2dd4032a3079467d4/validaciones-basicas.md)
+Aprender a validar datos de formularios desde JavaScript antes de enviarlos
+
 ## [Consumir una API](https://github.com/josenestormtz/javascript/blob/77c9366e976aeddb9f527767cef3c5a16488a030/consumir-api.md)
 Una vez que la API permite CORS, podemos consumirla fácilmente desde el navegador usando JavaScript.
 
