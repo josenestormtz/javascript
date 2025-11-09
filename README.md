@@ -1,5 +1,9 @@
 # JavaScript
 
+## [Uso de Arrays](https://github.com/josenestormtz/javascript/blob/0c483a5c1887fa55ea217d1d1cfa6e90761df012/arrays.md)
+Un array (o “arreglo”) es una estructura que permite almacenar varios valores en una sola variable.
+Por ejemplo, una lista de nombres, números o productos.
+
 ## [Capturar el evento click de un botón en JavaScript](https://github.com/josenestormtz/javascript/blob/f29e40e68428d76e9e6f353f24451316fd9e98bd/evento-click.md)
 Aprender cómo detectar cuando un usuario hace clic en un botón y ejecutar una función en respuesta.
 
