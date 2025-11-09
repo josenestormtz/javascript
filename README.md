@@ -9,5 +9,5 @@ Una vez que la API permite CORS, podemos consumirla fácilmente desde el navegad
 ## [Consumir una API enviando JSON con JavaScript](https://github.com/josenestormtz/javascript/blob/97adf49f8c589c3d9ee3e0676b083364200c059f/consumir-api-json.md)
 Aprender a enviar datos en formato JSON a una API mediante el método POST, usando fetch.
 
-## [Comprobar si un String comienza con cierta cadena en JavaScript] (https://github.com/josenestormtz/javascript/blob/5f7889751484d1d49358756c06be09f250ba5054/starts-with.md)
+## [Comprobar si un String comienza con cierta cadena](https://github.com/josenestormtz/javascript/blob/5f7889751484d1d49358756c06be09f250ba5054/starts-with.md)
 Aprender a verificar si una cadena de texto empieza con una palabra, letra o fragmento específico.
