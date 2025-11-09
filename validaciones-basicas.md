@@ -1,4 +1,4 @@
-# 🧩 Mini Tutorial: Validaciones básicas con JavaScript
+# 🧩 Validaciones básicas con JavaScript
 ## 🎯 Objetivo
 Aprender a validar datos de formularios desde JavaScript antes de enviarlos:
 - Que un input tenga valor  
