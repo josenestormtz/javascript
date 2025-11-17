@@ -1,4 +1,4 @@
-# 🧩 Validaciones básicas con JavaScript
+# 🧩 Validaciones con JavaScript
 ## 🎯 Objetivo
 Aprender a validar datos de formularios desde JavaScript antes de enviarlos:
 - Que un input tenga valor  
@@ -71,11 +71,19 @@ if (!telefonoValido.test(telefono)) {
 🔹 Solo permite 10 números (ideal para México).
 🔹 Puedes adaptar el patrón según tu país.
 
+## 5. Validar RFC
+El RFC válido debe cumplir:
+- **Personas físicas**: 4 letras + 6 números + 3 caracteres alfanuméricos. Ejemplo: **GODE561231GR8**
+- **Personas morales**: 3 letras + 6 números + 3 caracteres alfanuméricos. Ejemplo: **ABC1212319A1**
+```js
+const rfc = document.getElementById("rfc").value.trim().toUpperCase();
+const rfcValido = /^[A-ZÑ&]{3,4}\d{6}[A-Z0-9]{3}$/;
+
+if (!rfcValido.test(rfc)) {
+  alert("El RFC no tiene un formato válido");
+}
+```
+
 ## 🚀 Conclusión
 
 Estas validaciones ayudan a mejorar la **experiencia del usuario** y evitan errores antes de enviar datos al servidor.
----------------------------------------
-- **Campo vacío**	```.trim()``` y comparar con ```""```
-- **Select**	Comparar valor con ```""```
-- **Correo**	```.test()``` con regex	```/^[^\s@]+@[^\s@]+\.[^\s@]+$/```
-- **Teléfono**	```.test()``` con regex	```/^[0-9]{10}$/```
