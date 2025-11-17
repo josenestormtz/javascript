@@ -71,7 +71,7 @@ if (!telefonoValido.test(telefono)) {
 🔹 Solo permite 10 números (ideal para México).
 🔹 Puedes adaptar el patrón según tu país.
 
-## 5. Validar RFC
+## ⭐ 5. Validar RFC
 El RFC válido debe cumplir:
 - **Personas físicas**: 4 letras + 6 números + 3 caracteres alfanuméricos. Ejemplo: **GODE561231GR8**
 - **Personas morales**: 3 letras + 6 números + 3 caracteres alfanuméricos. Ejemplo: **ABC1212319A1**
