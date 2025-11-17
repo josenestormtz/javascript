@@ -18,3 +18,6 @@ Aprender a enviar datos en formato JSON a una API mediante el método POST, usan
 
 ## [Comprobar si un String comienza con cierta cadena](https://github.com/josenestormtz/javascript/blob/5f7889751484d1d49358756c06be09f250ba5054/starts-with.md)
 Aprender a verificar si una cadena de texto empieza con una palabra, letra o fragmento específico.
+
+## [Uso de async / await en JavaScript](https://github.com/josenestormtz/javascript/blob/21519787a0738c6ec08190bbe4ce1c8bda9dfd70/async-await.md)
+`async` y `await` son la forma **más moderna, limpia y sencilla** de manejar código asincrónico.
