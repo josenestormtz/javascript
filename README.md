@@ -4,6 +4,9 @@
 Un array (o “arreglo”) es una estructura que permite almacenar varios valores en una sola variable.
 Por ejemplo, una lista de nombres, números o productos.
 
+## [Filtrar Arrays](https://github.com/josenestormtz/javascript/blob/ab5156a49a1cc260cc3dfeae9adb54c69a901be5/array-filtrar.md)
+Aprende a filtrar un array de objetos en JavaScript.
+
 ## [Capturar el evento click de un botón en JavaScript](https://github.com/josenestormtz/javascript/blob/f29e40e68428d76e9e6f353f24451316fd9e98bd/evento-click.md)
 Aprender cómo detectar cuando un usuario hace clic en un botón y ejecutar una función en respuesta.
 
