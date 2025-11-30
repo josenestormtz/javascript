@@ -1,4 +1,4 @@
-# 🛠️ Consumir una API
+# 🛠️ Consumir una API utilizando GET
 
 Una vez que la API permite CORS, podemos consumirla fácilmente desde el navegador usando JavaScript.
 
