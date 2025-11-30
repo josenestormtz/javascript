@@ -1,71 +1,100 @@
 # 📘 Tutorial para seleccionar elementos con JavaScript
 
-Seleccionar elementos dentro del DOM es una de las tareas más comunes en JavaScript. Aquí aprenderás las formas más útiles y modernas para acceder a un hijo dentro de un elemento padre.
+Seleccionar elementos del DOM (la estructura HTML de tu página) es una de las tareas más comunes en JavaScript. Aquí aprenderás varias formas de seleccionar elementos, incluyendo cómo obtener hijos y cómo trabajar con clases, IDs y selectores avanzados.
 
-✅ 1. Seleccionar un elemento hijo usando querySelector
+🎯 1. Seleccionar por ID — getElementById
 
-La forma más práctica y recomendada.
+Obtiene un solo elemento, porque los IDs son únicos.
 
+const titulo = document.getElementById("miTitulo");
+console.log(titulo);
+
+🎯 2. Seleccionar por clase — getElementsByClassName
+
+Obtiene una colección (HTMLCollection) de todos los elementos que tienen esa clase.
+
+👉 Ejemplo básico
+const tarjetas = document.getElementsByClassName("tarjeta");
+console.log(tarjetas); // colección de elementos
+
+👉 Acceder a un elemento en específico
+const primeraTarjeta = tarjetas[0];
+
+👉 Recorrer todas las clases
+for (let t of tarjetas) {
+  console.log("Tarjeta:", t);
+}
+
+👉 Cambiar el contenido de todas las clases
+for (let t of tarjetas) {
+  t.textContent = "Actualizado";
+}
+
+👉 Agregar o quitar estilos
+for (let t of tarjetas) {
+  t.classList.add("resaltado");
+}
+
+
+📌 Importante:
+getElementsByClassName es vivo, es decir, si agregas o quitas elementos con esa clase, la colección cambia automáticamente.
+
+🎯 3. Seleccionar por etiqueta — getElementsByTagName
+
+Ejemplo:
+
+const parrafos = document.getElementsByTagName("p");
+
+🎯 4. Seleccionar usando CSS — querySelector
+
+Devuelve el primer elemento que coincida con el selector.
+
+const primero = document.querySelector(".caja");
+
+🎯 5. Seleccionar todos los que coincidan — querySelectorAll
+
+Devuelve una NodeList (puedes usar forEach).
+
+const cajas = document.querySelectorAll(".caja");
+cajas.forEach(caja => console.log(caja));
+
+🎯 6. Seleccionar el hijo de un elemento
+
+Si seleccionaste un DIV y quieres su <h2> interno:
+
+👉 Usando querySelector
 const contenedor = document.getElementById("miDiv");
 const titulo = contenedor.querySelector("h2");
 
+👉 O seleccionando todos los hijos y filtrando
+const hijos = contenedor.children;
 
-🔹 Selecciona el primer h2 dentro del div.
-🔹 Puedes usar cualquier selector CSS (h2, .clase, #id, etc.).
+🎯 7. Seleccionar el padre de un elemento
+const hijo = document.getElementById("subtitulo");
+const padre = hijo.parentElement;
 
-Ejemplo HTML:
-
-<div id="miDiv">
-  <h2>Título principal</h2>
-</div>
-
-✅ 2. Seleccionar varios elementos hijos con querySelectorAll
-
-Si necesitas todos los h2 dentro del elemento:
-
-const contenedor = document.getElementById("miDiv");
-const titulos = contenedor.querySelectorAll("h2");
-
-const primero = titulos[0];
-const segundo = titulos[1];
-
-✅ 3. Seleccionar por índice usando children
-
-Ideal cuando conoces la posición exacta del hijo.
-
-const contenedor = document.getElementById("miDiv");
-const primerHijo = contenedor.children[0];
-
-
-🔹 children devuelve solo elementos, no incluye textos o saltos de línea.
-🔹 Práctico y muy rápido.
-
-✅ 4. Seleccionar por etiqueta con getElementsByTagName
-
-Método tradicional y compatible con todo:
-
-const contenedor = document.getElementById("miDiv");
-const titulo = contenedor.getElementsByTagName("h2")[0];
-
-🧠 ¿Cuál método debo usar?
-Método	Uso recomendado
-querySelector	Para la mayoría de casos. Limpio, moderno y flexible.
-querySelectorAll	Cuando necesitas varios elementos.
-children[n]	Si conoces el índice específico del hijo.
-getElementsByTagName	Alternativa tradicional, útil en DOM muy simple.
-📌 Ejemplo final
+🧪 Ejemplo práctico completo
 
 HTML:
 
-<div id="card">
-  <h2 class="title">Producto</h2>
-  <p>Descripción breve</p>
+<div id="contenedor">
+  <h2 class="titulo">Título 1</h2>
+  <h2 class="titulo">Título 2</h2>
+  <p class="texto">Ejemplo</p>
 </div>
 
 
 JavaScript:
 
-const card = document.getElementById("card");
-const titulo = card.querySelector(".title");
+const porID = document.getElementById("contenedor");  
+const porClase = document.getElementsByClassName("titulo");
+const porSelector = document.querySelector(".texto");
+const porSelectorAll = document.querySelectorAll(".titulo");
 
-console.log(titulo.textContent); // → "Producto"
+// Obtener un hijo h2 dentro de un div
+const h2Dentro = porID.querySelector("h2");
+
+// Recorrer elementos por clase
+for (let h of porClase) {
+  console.log(h.textContent);
+}
