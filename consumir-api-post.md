@@ -7,10 +7,7 @@ Aprender a enviar datos en formato **JSON** a una API mediante el método **POST
 
 ## 🧩 Ejemplo básico
 
-```html
-<button id="btnEnviar">Enviar datos</button>
-
-<script>
+```javascript
 document.addEventListener('DOMContentLoaded', function() {
 
   document.getElementById('btnEnviar').addEventListener('click', async function() {
@@ -50,7 +47,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 });
-</script>
 ```
 
 ## 🧠 Explicación paso a paso
